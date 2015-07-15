@@ -1,11 +1,13 @@
 package recursion;
 
+
 public class StringPermutation {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 		String str = "abc";
+		str.valueOf(100);
 		permute(str.toCharArray() , 0);
 	}
 
@@ -28,7 +30,6 @@ public class StringPermutation {
 	private static void swap(char[] chars, int i, int j) {
 		char c1 = chars[i];
 		char c2 = chars[j];
-
 		chars[i] = c2;
 		chars[j] = c1;
 	}
